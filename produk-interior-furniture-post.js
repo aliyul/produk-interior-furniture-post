@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
      // Default untuk menyembunyikan elemen
-     ProdukInteriorFurnitureLink.style.visibility = 'hidden';
+     ProdukInteriorFurniturePostLink.style.visibility = 'hidden';
      ProdukkitchenSetPostLink.style.visibility = 'hidden';
   
      pageNameProdukInFurPost.textContent = "";
@@ -90,7 +90,7 @@ if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
      
        
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
-        ProdukInteriorFurnitureLink.style.visibility = 'visible';
+        ProdukInteriorFurniturePostLink.style.visibility = 'visible';
         ProdukkitchenSetPostLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost];
