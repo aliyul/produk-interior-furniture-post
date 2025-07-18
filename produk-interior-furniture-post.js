@@ -1,18 +1,30 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingProdukInteriorFurniturePost = {
-"https://www.betonjayareadymix.com/p/kitchen-set.html": "Kitchen Set"
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-minimalis-modern.html": "Kitchen Set Minimalis Modern",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-siap-pakai.html": "Kitchen Set Siap Pakai",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-pabrikan.html": "Harga Kitchen Set Pabrikan",
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-minimalis.html": "Harga Kitchen Set Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-modular.html": "Harga Kitchen Set Modular",
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-minimalis.html": "Jual Kitchen Set Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-modular.html": "Jual Kitchen Set Modular",
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-terbaru.html": "Jual Kitchen Set Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-material-hpl-mdf.html": "Kitchen Set Material HPL MDF",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-type-l-dan-i.html": "Kitchen Set Tipe L dan I",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-mini-apartemen.html": "Kitchen Set Mini Apartemen"
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
-let removedElementsProdukInFur = {};
+let removedElementsProdukInFurPost = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
 function removeCondition(conditionId) {
     const conditionElement = document.getElementById(conditionId);
 
     if (conditionElement) {
         // Menyimpan elemen yang dihapus dalam objek untuk bisa dikembalikan
-        removedElementsProdukInFur[conditionId] = conditionElement;
+        removedElementsProdukInFurPost[conditionId] = conditionElement;
         conditionElement.remove(); // Menghapus elemen tersebut
     }
 }
@@ -20,13 +32,13 @@ function removeCondition(conditionId) {
 // Fungsi untuk mengembalikan elemen yang telah dihapus
 function restoreCondition(conditionId) {
     const breadcrumb = document.querySelector('.breadcrumb');
-    const elementToRestore = removedElementsProdukInFur[conditionId]; // Mendapatkan elemen yang disimpan
+    const elementToRestore = removedElementsProdukInFurPost[conditionId]; // Mendapatkan elemen yang disimpan
 
     if (elementToRestore) {
         breadcrumb.appendChild(elementToRestore); // Menambahkan elemen kembali ke dalam breadcrumb
-        delete removedElementsProdukInFur[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
+        delete removedElementsProdukInFurPost[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
     } else {
-        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElementsProdukKons.`);
+        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElementsProdukInFurPost.`);
     }
 }
 
@@ -34,48 +46,54 @@ document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrlProdukInFur = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-    var ProdukInFur = document.getElementById("ProdukInFur");
-    if (!ProdukInFur) {
-        console.error("elemen Id ProdukInFur kondisi terhapus");
+    var ProdukInFurPost = document.getElementById("ProdukInFurPost");
+    if (!ProdukInFurPost) {
+        console.error("elemen Id ProdukInFurPost kondisi terhapus");
         return;
     }
      // Menemukan elemen menggunakan Id
-     var ProdukInteriorFurnitureLink = document.getElementById("ProdukInteriorFurniture");
-     var KitchenSetLink = document.getElementById("KitchenSet");
+     var ProdukInteriorFurniturePostLink = document.getElementById("ProdukInteriorFurniturePost");
+     var ProdukkitchenSetPostLink = document.getElementById("ProdukkitchenSetPost");
 
-     var pageNameProdukInFur = document.getElementById("pageNameProdukInFur");
+     var pageNameProdukInFurPost = document.getElementById("pageNameProdukInFurPost");
     
 
      // Default untuk menyembunyikan elemen
      ProdukInteriorFurnitureLink.style.visibility = 'hidden';
-     KitchenSetLink.style.visibility = 'hidden';
+     ProdukkitchenSetPostLink.style.visibility = 'hidden';
   
-     pageNameProdukInFur.textContent = "";
-if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFur]) {
-        restoreCondition('ProdukInFur');
-        restoreCondition('ProdukInteriorFurniture');
-        //restoreCondition('ProdukKonstruksi');
+     pageNameProdukInFurPost.textContent = "";
+if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
+        restoreCondition('ProdukInFurPost');
+        restoreCondition('ProdukInteriorFurniturePost');
+        restoreCondition('ProdukkitchenSetPost');
  
-     //hapus elemen div id lain
-        removeCondition1('MaterialKons');
-        removeCondition1('ProdukKons');
-        removeCondition1('ProdukKonsSaluran');
-        removeCondition1('ProdukKonsPembatas');
-        removeCondition1('JasaKonsPembatas');
-        removeCondition('JasaKonsJalanPerkerasan');
-        removeCondition('JasaKonsPondasiTanah');
-       	removeCondition1('JasaKons');
-       	removeCondition1('JasaKonsSub');
-       	removeCondition1('MenuKons');
-       	removeCondition1('JasaKonsFinishing');
-        removeCondition1('JasaKonsStruktur');
-        removeCondition1('JasaKonsPerbaikan');
+      //hapus elemen div id lain
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
 
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+       
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
         ProdukInteriorFurnitureLink.style.visibility = 'visible';
-         KitchenSetLink.style.visibility = 'visible';
+        ProdukkitchenSetPostLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
+        pageNameProdukInFurPost.textContent = urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost];
     }
   
    });
