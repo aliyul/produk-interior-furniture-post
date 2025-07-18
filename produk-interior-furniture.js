@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
      // Menemukan elemen menggunakan Id
      var ProdukInteriorFurnitureLink = document.getElementById("ProdukInteriorFurniture");
-     var KitchenSetLink = document.getElementById("KitchenSet");
+     //var KitchenSetLink = document.getElementById("KitchenSet");
 
      var pageNameProdukInFur = document.getElementById("pageNameProdukInFur");
     
 
      // Default untuk menyembunyikan elemen
      ProdukInteriorFurnitureLink.style.visibility = 'hidden';
-     KitchenSetLink.style.visibility = 'hidden';
+     //KitchenSetLink.style.visibility = 'hidden';
   
      pageNameProdukInFur.textContent = "";
 if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
@@ -73,7 +73,7 @@ if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
 
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
         ProdukInteriorFurnitureLink.style.visibility = 'visible';
-       // ProdukSaluranLink.style.visibility = 'visible';
+         //KitchenSetLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
     }
