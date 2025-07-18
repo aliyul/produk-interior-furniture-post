@@ -45,7 +45,7 @@ function restoreCondition(conditionId) {
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
-    const cleanUrlProdukInFur = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
+    const cleanUrlProdukInFurPost = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
     var ProdukInFurPost = document.getElementById("ProdukInFurPost");
     if (!ProdukInFurPost) {
         console.error("elemen Id ProdukInFurPost kondisi terhapus");
