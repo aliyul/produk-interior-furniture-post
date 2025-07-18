@@ -1,6 +1,6 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingProdukKonstruksi = {
+const urlMappingProdukInteriorFurniturePost = {
 "https://www.betonjayareadymix.com/p/kitchen-set.html": "Kitchen Set"
 };
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
      KitchenSetLink.style.visibility = 'hidden';
   
      pageNameProdukInFur.textContent = "";
-if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
+if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFur]) {
         restoreCondition('ProdukInFur');
         restoreCondition('ProdukInteriorFurniture');
         //restoreCondition('ProdukKonstruksi');
