@@ -72,9 +72,8 @@ if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
         removeCondition1('JasaKonsPerbaikan');
 
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
-        
         ProdukInteriorFurnitureLink.style.visibility = 'visible';
-       // ProdukSaluranLink.style.visibility = 'visible';
+         KitchenSetLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
     }
