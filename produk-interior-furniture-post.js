@@ -66,20 +66,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
      // Menemukan elemen menggunakan Id
      var ProdukInteriorFurniturePostLink = document.getElementById("ProdukInteriorFurniturePost");
-     var ProdukkitchenSetPostLink = document.getElementById("ProdukkitchenSetPost");
+     //var ProdukkitchenSetPostLink = document.getElementById("ProdukkitchenSetPost");
 
      var pageNameProdukInFurPost = document.getElementById("pageNameProdukInFurPost");
     
 
      // Default untuk menyembunyikan elemen
      ProdukInteriorFurniturePostLink.style.visibility = 'hidden';
-     ProdukkitchenSetPostLink.style.visibility = 'hidden';
+    // ProdukkitchenSetPostLink.style.visibility = 'hidden';
   
      pageNameProdukInFurPost.textContent = "";
 if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
-        restoreCondition('ProdukkitchenSetPost');
+       // restoreCondition('ProdukkitchenSetPost');
  
       //hapus elemen div id lain
         removeCondition('ProdukKonsPembatasPost');
@@ -104,7 +104,7 @@ if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
        
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
         ProdukInteriorFurniturePostLink.style.visibility = 'visible';
-        ProdukkitchenSetPostLink.style.visibility = 'visible';
+       // ProdukkitchenSetPostLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost];
     }
