@@ -1,6 +1,11 @@
-
+/*
+ProdKitchenPabrikanPost
+ProdKamarSetPost
+ProdSofaNetPost
+ProdTokoFurniturePost
+*/
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingProdukInteriorFurniturePost = {
+const urlMappingProdKitchenPabrikanPost = {
   "https://www.betonjayareadymix.com/2019/04/kitchen-set-minimalis-modern.html": "Kitchen Set Minimalis Modern",
   "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah",
   "https://www.betonjayareadymix.com/2019/04/kitchen-set-siap-pakai.html": "Kitchen Set Siap Pakai",
@@ -13,12 +18,9 @@ const urlMappingProdukInteriorFurniturePost = {
   "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-terbaru.html": "Jual Kitchen Set Terbaru",
   "https://www.betonjayareadymix.com/2019/04/kitchen-set-material-hpl-mdf.html": "Kitchen Set Material HPL MDF",
   "https://www.betonjayareadymix.com/2019/04/kitchen-set-type-l-dan-i.html": "Kitchen Set Tipe L dan I",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-mini-apartemen.html": "Kitchen Set Mini Apartemen",
-
-  "https://www.betonjayareadymix.com/2018/09/toko-furniture-terdekat.html": "Toko Furniture Terdekat",
-  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set.html": "Harga Sofa Set",
-  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set-jati.html": "Harga Sofa Set Jati",
-  "https://www.betonjayareadymix.com/2018/09/harga-kasur-set.html": "Harga Kasur Set",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-mini-apartemen.html": "Kitchen Set Mini Apartemen"
+};
+const urlMappingProdKamarSetPost = {
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set.html": "Harga Kamar Set",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-hpl.html": "Harga Kamar Set HPL",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-pengantin.html": "Harga Kamar Set Pengantin",
@@ -26,6 +28,15 @@ const urlMappingProdukInteriorFurniturePost = {
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-minimalis-modern.html": "Harga Kamar Set Minimalis Modern",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-murah.html": "Harga Kamar Set Murah"
 
+};
+const urlMappingProdSofaNetPost = {
+  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set.html": "Harga Sofa Set",
+  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set-jati.html": "Harga Sofa Set Jati",
+  "https://www.betonjayareadymix.com/2018/09/harga-kasur-set.html": "Harga Kasur Set"
+ 
+};
+const urlMappingProdTokoFurniturePost = {
+  "https://www.betonjayareadymix.com/2018/09/toko-furniture-terdekat.html": "Toko Furniture Terdekat"
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
