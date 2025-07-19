@@ -1,7 +1,11 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingProdukInteriorFurniture = {
-"https://www.betonjayareadymix.com/p/produk-kitchen-set.html": "Produk Kitchen Set"
+   "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture",
+  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set",
+  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set",
+  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan"
+
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
