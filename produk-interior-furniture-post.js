@@ -82,6 +82,7 @@ if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
        // restoreCondition('ProdukkitchenSetPost');
  
       //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
