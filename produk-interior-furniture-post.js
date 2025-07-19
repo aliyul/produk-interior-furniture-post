@@ -20,7 +20,6 @@ const urlMappingProdukInteriorFurniturePost = {
   "https://www.betonjayareadymix.com/2018/09/harga-sofa-set-jati.html": "Harga Sofa Set Jati",
   "https://www.betonjayareadymix.com/2018/09/harga-kasur-set.html": "Harga Kasur Set",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set.html": "Harga Kamar Set",
-  "https://www.betonjayareadymix.com/2018/09/jasa-pembuatan-kamar-set.html": "Jasa Pembuatan Kamar Set",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-hpl.html": "Harga Kamar Set HPL",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-pengantin.html": "Harga Kamar Set Pengantin",
   "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-bigland.html": "Harga Kamar Set Bigland",
