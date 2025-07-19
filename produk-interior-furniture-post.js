@@ -79,17 +79,23 @@ document.addEventListener("DOMContentLoaded", function() {
      //var ProdukkitchenSetPostLink = document.getElementById("ProdukkitchenSetPost");
 
      var pageNameProdukInFurPost = document.getElementById("pageNameProdukInFurPost");
+     var ProdKitchenPabrikanPostLink = document.getElementById("ProdKitchenPabrikanPost");
+     var ProdKamarSetPostLink = document.getElementById("ProdKamarSetPost");
+     var ProdSofaNetPostLink = document.getElementById("ProdSofaNetPost");
+     var ProdTokoFurniturePostLink = document.getElementById("ProdTokoFurniturePost");
     
-
      // Default untuk menyembunyikan elemen
      ProdukInteriorFurniturePostLink.style.visibility = 'hidden';
-    // ProdukkitchenSetPostLink.style.visibility = 'hidden';
+     ProdKitchenPabrikanPostLink.style.visibility = 'hidden';
+     ProdKamarSetPostLink.style.visibility = 'hidden';
+     ProdSofaNetPostLink.style.visibility = 'hidden';
+     ProdTokoFurniturePostLink.style.visibility = 'hidden';
   
      pageNameProdukInFurPost.textContent = "";
-if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
+if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
-       // restoreCondition('ProdukkitchenSetPost');
+        restoreCondition('ProdKitchenPabrikanPost');
  
       //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
@@ -113,11 +119,16 @@ if (urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost]) {
         removeCondition('JasaKonsJalanPerkerasanPost');
      
        
-     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
+     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA selain ProdKitchenPabrikanPost
+        //removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdKamarSetPost');
+        removeCondition('ProdSofaNetPost');
+        removeCondition('ProdTokoFurniturePost');
+		
         ProdukInteriorFurniturePostLink.style.visibility = 'visible';
-       // ProdukkitchenSetPostLink.style.visibility = 'visible';
+        ProdKitchenPabrikanPostLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukInFurPost.textContent = urlMappingProdukInteriorFurniturePost[cleanUrlProdukInFurPost];
+        pageNameProdukInFurPost.textContent = urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost];
     }
   
    });
