@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdTokoFurniturePostLink.style.visibility = 'hidden';
   
      pageNameProdukInFurPost.textContent = "";
-if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost]) {
+ if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
         restoreCondition('ProdKitchenPabrikanPost');
@@ -129,6 +129,119 @@ if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost]) {
         ProdKitchenPabrikanPostLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost];
+    }
+ if (urlMappingProdKamarSetPost[cleanUrlProdukInFurPost]) {
+        restoreCondition('ProdukInFurPost');
+        restoreCondition('ProdukInteriorFurniturePost');
+        restoreCondition('ProdKamarSetPost');
+ 
+	 //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+       
+     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA selain ProdKitchenPabrikanPost
+        //removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdSofaNetPost');
+        removeCondition('ProdTokoFurniturePost');
+		
+        ProdukInteriorFurniturePostLink.style.visibility = 'visible';
+        ProdKamarSetPostLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukInFurPost.textContent = urlMappingProdKamarSetPost[cleanUrlProdukInFurPost];
+    }
+ if (urlMappingProdSofaNetPost[cleanUrlProdukInFurPost]) {
+        restoreCondition('ProdukInFurPost');
+        restoreCondition('ProdukInteriorFurniturePost');
+        restoreCondition('ProdSofaNetPost');
+
+      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+       
+     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA selain ProdKitchenPabrikanPost
+        //removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdKamarSetPost');
+        removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdTokoFurniturePost');
+		
+        ProdukInteriorFurniturePostLink.style.visibility = 'visible';
+        ProdSofaNetPostLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukInFurPost.textContent = urlMappingProdSofaNetPost[cleanUrlProdukInFurPost];
+    }
+ if (urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost]) {
+        restoreCondition('ProdukInFurPost');
+        restoreCondition('ProdukInteriorFurniturePost');
+        restoreCondition('ProdTokoFurniturePost');
+ 
+      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+       
+     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA selain ProdKitchenPabrikanPost
+        //removeCondition('ProdKitchenPabrikanPost');
+        removeCondition('ProdKamarSetPost');
+        removeCondition('ProdSofaNetPost');
+        removeCondition('ProdKitchenPabrikanPost');
+		
+        ProdukInteriorFurniturePostLink.style.visibility = 'visible';
+        ProdTokoFurniturePostLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukInFurPost.textContent = urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost];
     }
   
    });
