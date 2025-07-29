@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsAlatKonstruksiPost');
         removeCondition('JasaKonsJalanPerkerasanPost');
      
-       
      //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA selain ProdKitchenPabrikanPost
         //removeCondition('ProdKitchenPabrikanPost');
         removeCondition('ProdKamarSetPost');
@@ -130,6 +129,44 @@ document.addEventListener("DOMContentLoaded", function() {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFur]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Interior",
+                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
+               },
+	       {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Kitchen Set Pabrikan",
+                   "item": "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFur],
+                   "item": cleanUrlProdukInFur
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
  if (urlMappingProdKamarSetPost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
@@ -167,6 +204,45 @@ document.addEventListener("DOMContentLoaded", function() {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdKamarSetPost[cleanUrlProdukInFurPost];
     }
+
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdKamarSetPost[cleanUrlProdukInFur]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Interior",
+                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
+               },
+	       {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Kamar Set",
+                   "item": "https://www.betonjayareadymix.com/p/kamar-set.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": urlMappingProdKamarSetPost[cleanUrlProdukInFur],
+                   "item": cleanUrlProdukInFur
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
  if (urlMappingProdSofaNetPost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
@@ -205,6 +281,44 @@ document.addEventListener("DOMContentLoaded", function() {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdSofaNetPost[cleanUrlProdukInFurPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdSofaNetPost[cleanUrlProdukInFur]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Interior",
+                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
+               },
+	       {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Sofa Set",
+                   "item": "https://www.betonjayareadymix.com/p/sofa-set.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": urlMappingProdSofaNetPost[cleanUrlProdukInFur],
+                   "item": cleanUrlProdukInFur
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
  if (urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost]) {
         restoreCondition('ProdukInFurPost');
         restoreCondition('ProdukInteriorFurniturePost');
@@ -243,5 +357,42 @@ document.addEventListener("DOMContentLoaded", function() {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFurPost.textContent = urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost];
     }
-  
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdTokoFurniturePost[cleanUrlProdukInFur]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Interior",
+                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
+               },
+	       {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Toko Furniture",
+                   "item": "https://www.betonjayareadymix.com/p/toko-furniture.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": urlMappingProdTokoFurniturePost[cleanUrlProdukInFur],
+                   "item": cleanUrlProdukInFur
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    });
