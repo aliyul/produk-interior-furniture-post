@@ -81,5 +81,38 @@ if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Interior",
+                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": urlMappingProdukInteriorFurniture[cleanUrlProdukInFur],
+                   "item": cleanUrlProdukInFur
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
   
    });
