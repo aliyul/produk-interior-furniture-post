@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukInFurPost.textContent = urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost];
     }
  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFur]) {
+   if (urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -156,8 +156,8 @@ document.addEventListener("DOMContentLoaded", function() {
                {
                    "@type": "ListItem",
                    "position": 4,
-                   "name": urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFur],
-                   "item": cleanUrlProdukInFur
+                   "name": urlMappingProdKitchenPabrikanPost[cleanUrlProdukInFurPost],
+                   "item": cleanUrlProdukInFurPost
                }
            ]
        };
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdKamarSetPost[cleanUrlProdukInFur]) {
+   if (urlMappingProdKamarSetPost[cleanUrlProdukInFurPost]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -232,8 +232,8 @@ document.addEventListener("DOMContentLoaded", function() {
                {
                    "@type": "ListItem",
                    "position": 4,
-                   "name": urlMappingProdKamarSetPost[cleanUrlProdukInFur],
-                   "item": cleanUrlProdukInFur
+                   "name": urlMappingProdKamarSetPost[cleanUrlProdukInFurPost],
+                   "item": cleanUrlProdukInFurPost
                }
            ]
        };
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukInFurPost.textContent = urlMappingProdSofaNetPost[cleanUrlProdukInFurPost];
     }
  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdSofaNetPost[cleanUrlProdukInFur]) {
+   if (urlMappingProdSofaNetPost[cleanUrlProdukInFurPost]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -308,8 +308,8 @@ document.addEventListener("DOMContentLoaded", function() {
                {
                    "@type": "ListItem",
                    "position": 4,
-                   "name": urlMappingProdSofaNetPost[cleanUrlProdukInFur],
-                   "item": cleanUrlProdukInFur
+                   "name": urlMappingProdSofaNetPost[cleanUrlProdukInFurPost],
+                   "item": cleanUrlProdukInFurPost
                }
            ]
        };
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukInFurPost.textContent = urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost];
     }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdTokoFurniturePost[cleanUrlProdukInFur]) {
+   if (urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -384,8 +384,8 @@ document.addEventListener("DOMContentLoaded", function() {
                {
                    "@type": "ListItem",
                    "position": 4,
-                   "name": urlMappingProdTokoFurniturePost[cleanUrlProdukInFur],
-                   "item": cleanUrlProdukInFur
+                   "name": urlMappingProdTokoFurniturePost[cleanUrlProdukInFurPost],
+                   "item": cleanUrlProdukInFurPost
                }
            ]
        };
