@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -175,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	 //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -250,6 +252,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -327,6 +330,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
