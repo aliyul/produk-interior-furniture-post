@@ -183,13 +183,14 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */	
-    var ProdukInFur = document.getElementById("ProdukInFur");
-    if (!ProdukInFur) {
-        console.error("elemen Id ProdukInFur kondisi terhapus");
-        return;
+
+	    // --- validasi URL terdaftar ---
+    if (!urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukInFur}`);
+      return;
     }
 
-	    (async function runHybridDateModified() {
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -270,6 +271,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+	
+    var ProdukInFur = document.getElementById("ProdukInFur");
+    if (!ProdukInFur) {
+        console.error("elemen Id ProdukInFur kondisi terhapus");
+        return;
+    }
 	
      // Menemukan elemen menggunakan Id
      var ProdukInteriorFurnitureLink = document.getElementById("ProdukInteriorFurniture");
