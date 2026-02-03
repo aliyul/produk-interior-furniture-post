@@ -223,14 +223,24 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-	
-    var ProdukInFurPost = document.getElementById("ProdukInFurPost");
-    if (!ProdukInFurPost) {
-        console.error("elemen Id ProdukInFurPost kondisi terhapus");
-        return;
+
+     // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingProdKitchenPabrikanPost,
+		urlMappingProdKamarSetPost,
+		urlMappingProdSofaNetPost,
+		urlMappingProdTokoFurniturePost
+		
+   );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukInFurPost]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukInFurPost}`);
+      return;
     }
-	
-       (async function runHybridDateModified() {
+
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -312,6 +322,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		  }
 		})();
 
+    var ProdukInFurPost = document.getElementById("ProdukInFurPost");
+    if (!ProdukInFurPost) {
+        console.error("elemen Id ProdukInFurPost kondisi terhapus");
+        return;
+    }
 
      // Menemukan elemen menggunakan Id
      var ProdukInteriorFurniturePostLink = document.getElementById("ProdukInteriorFurniturePost");
