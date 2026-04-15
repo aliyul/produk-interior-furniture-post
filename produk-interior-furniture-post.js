@@ -5,39 +5,214 @@ ProdSofaNetPost
 ProdTokoFurniturePost
 */
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingProdKitchenPabrikanPost = {
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-minimalis-modern.html": "Kitchen Set Minimalis Modern",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-siap-pakai.html": "Kitchen Set Siap Pakai",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",
-  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-pabrikan.html": "Harga Kitchen Set Pabrikan",
-  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-minimalis.html": "Harga Kitchen Set Minimalis",
-  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-modular.html": "Harga Kitchen Set Modular",
-  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-minimalis.html": "Jual Kitchen Set Minimalis",
-  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-modular.html": "Jual Kitchen Set Modular",
-  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-terbaru.html": "Jual Kitchen Set Terbaru",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-material-hpl-mdf.html": "Kitchen Set Material HPL MDF",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-type-l-dan-i.html": "Kitchen Set Tipe L dan I",
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-mini-apartemen.html": "Kitchen Set Mini Apartemen"
-};
-const urlMappingProdKamarSetPost = {
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set.html": "Harga Kamar Set",
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-hpl.html": "Harga Kamar Set HPL",
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-pengantin.html": "Harga Kamar Set Pengantin",
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-bigland.html": "Harga Kamar Set Bigland",
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-minimalis-modern.html": "Harga Kamar Set Minimalis Modern",
-  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-murah.html": "Harga Kamar Set Murah"
+// ============================================================
+// PRODUK INTERIOR FURNITURE - POST (BLOG)
+// ============================================================
+// 🧠 SEO NOTE: Semua URL di bawah ini adalah MONEY PAGE (konten transaksional)
+// Parent: Produk Interior (/p/produk-interior.html)
+// ============================================================
 
+// ============================================================
+// [MONEY PAGE] - KITCHEN SET PABRIKAN POST
+// 🧠 STATUS: AKTIF (konten lengkap)
+// Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > [Nama Halaman]
+// ============================================================
+
+const urlMappingProdKitchenPabrikanPost = {
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET MINIMALIS MODERN
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Minimalis Modern
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-minimalis-modern.html": "Kitchen Set Minimalis Modern [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET MODULAR RUMAH
+  // 🧠 STATUS: PERLU DICEK (konten tidak lengkap - hanya breadcrumb)
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Modular Rumah
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah [MONEY PAGE - KONTEN TIPIS]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET SIAP PAKAI
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Siap Pakai
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-siap-pakai.html": "Kitchen Set Siap Pakai [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET PABRIKAN
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Pabrikan
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KITCHEN SET PABRIKAN
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Harga Kitchen Set Pabrikan
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-pabrikan.html": "Harga Kitchen Set Pabrikan [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KITCHEN SET MINIMALIS
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Harga Kitchen Set Minimalis
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-minimalis.html": "Harga Kitchen Set Minimalis [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KITCHEN SET MODULAR
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Harga Kitchen Set Modular
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/harga-kitchen-set-modular.html": "Harga Kitchen Set Modular [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - JUAL KITCHEN SET MINIMALIS
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Jual Kitchen Set Minimalis
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-minimalis.html": "Jual Kitchen Set Minimalis [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - JUAL KITCHEN SET MODULAR
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Jual Kitchen Set Modular
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-modular.html": "Jual Kitchen Set Modular [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - JUAL KITCHEN SET TERBARU
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Jual Kitchen Set Terbaru
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/jual-kitchen-set-terbaru.html": "Jual Kitchen Set Terbaru [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET MATERIAL HPL MDF
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Material HPL MDF
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-material-hpl-mdf.html": "Kitchen Set Material HPL MDF [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET TIPE L DAN I
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Tipe L dan I
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-type-l-dan-i.html": "Kitchen Set Tipe L dan I [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - KITCHEN SET MINI APARTEMEN
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Mini Apartemen
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-mini-apartemen.html": "Kitchen Set Mini Apartemen [MONEY PAGE]"
 };
+
+// ============================================================
+// [MONEY PAGE] - KAMAR SET POST
+// 🧠 STATUS: AKTIF (konten lengkap untuk beberapa URL, perlu dicek lainnya)
+// Breadcrumb: Home > Produk Interior > Kamar Set > [Nama Halaman]
+// ============================================================
+
+const urlMappingProdKamarSetPost = {
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set.html": "Harga Kamar Set [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET HPL
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set HPL
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-hpl.html": "Harga Kamar Set HPL [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET PENGANTIN
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set Pengantin
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-pengantin.html": "Harga Kamar Set Pengantin [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET BIGLAND
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set Bigland
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-bigland.html": "Harga Kamar Set Bigland [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET MINIMALIS MODERN
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set Minimalis Modern
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-minimalis-modern.html": "Harga Kamar Set Minimalis Modern [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KAMAR SET MURAH
+  // Breadcrumb: Home > Produk Interior > Kamar Set > Harga Kamar Set Murah
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kamar-set-murah.html": "Harga Kamar Set Murah [MONEY PAGE]"
+};
+
+// ============================================================
+// [MONEY PAGE] - SOFA SET POST
+// 🧠 STATUS: AKTIF (konten lengkap)
+// Breadcrumb: Home > Produk Interior > Sofa Set > [Nama Halaman]
+// ============================================================
+
 const urlMappingProdSofaNetPost = {
-  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set.html": "Harga Sofa Set",
-  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set-jati.html": "Harga Sofa Set Jati",
-  "https://www.betonjayareadymix.com/2018/09/harga-kasur-set.html": "Harga Kasur Set"
- 
+  // ============================================================
+  // [MONEY PAGE] - HARGA SOFA SET
+  // Breadcrumb: Home > Produk Interior > Sofa Set > Harga Sofa Set
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set.html": "Harga Sofa Set [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA SOFA SET JATI
+  // Breadcrumb: Home > Produk Interior > Sofa Set > Harga Sofa Set Jati
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-sofa-set-jati.html": "Harga Sofa Set Jati [MONEY PAGE]",
+
+  // ============================================================
+  // [MONEY PAGE] - HARGA KASUR SET
+  // 🧠 CATATAN: Kasur Set bisa di bawah Kamar Set atau Produk Interior
+  // Breadcrumb: Home > Produk Interior > Harga Kasur Set
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/harga-kasur-set.html": "Harga Kasur Set [MONEY PAGE]"
 };
+
+// ============================================================
+// [MONEY PAGE] - TOKO FURNITURE POST
+// 🧠 STATUS: AKTIF (konten lengkap)
+// Breadcrumb: Home > Produk Interior > Toko Furniture > [Nama Halaman]
+// ============================================================
+
 const urlMappingProdTokoFurniturePost = {
-  "https://www.betonjayareadymix.com/2018/09/toko-furniture-terdekat.html": "Toko Furniture Terdekat"
+  // ============================================================
+  // [MONEY PAGE] - TOKO FURNITURE TERDEKAT
+  // Breadcrumb: Home > Produk Interior > Toko Furniture > Toko Furniture Terdekat
+  // ============================================================
+  "https://www.betonjayareadymix.com/2018/09/toko-furniture-terdekat.html": "Toko Furniture Terdekat [MONEY PAGE]"
 };
+/*
+is TYPE yang digunakan:
+
+[MONEY PAGE] — halaman transaksional (harga, jual, sewa, beli)
+)
+
+📊 BREADCRUMB UNTUK MASING-MASING HALAMAN
+Halaman								Breadcrumb (4 level)
+Kitchen Set Minimalis Modern		Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Minimalis Modern
+Harga Kamar Set						Home > Produk Interior > Kamar Set > Harga Kamar Set
+Harga Sofa Set Jati					Home > Produk Interior > Sofa Set > Harga Sofa Set Jati
+Harga Kasur Set						Home > Produk Interior > Harga Kasur Set
+Toko Furniture Terdekat				Home > Produk Interior > Toko Furniture > Toko Furniture Terdekat
+*/
+🟡 CATATAN PENTING
+javascript
+// ============================================================
+// 🟡 CATATAN - URL PERLU DICEK
+// ============================================================
+
+/*
+| URL | Masalah | Saran |
+|-----|---------|-------|
+| /2019/04/kitchen-set-modular-rumah.html | Konten tidak lengkap (hanya breadcrumb, tanpa konten utama) | Perbaiki atau redirect ke halaman lain |
+
+📌 SARAN UNTUK `harga-kasur-set.html`:
+- Saat ini berada di `urlMappingProdSofaNetPost` (di bawah Sofa Set)
+- Sebaiknya pindahkan ke const terpisah `urlMappingProdKasurSetPost` atau di bawah `Kamar Set`
+- Karena Kasur Set lebih relevan dengan Kamar Set daripada Sofa Set
+*/
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukInFurPost = {};
