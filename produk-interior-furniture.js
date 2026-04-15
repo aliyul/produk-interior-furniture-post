@@ -13,28 +13,28 @@ const urlMappingProdukInteriorFurniture = {
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Produk Interior > Toko Furniture
   // ============================================================
-  "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture [VARIANT]",
+  "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture",
 
   // ============================================================
   // [VARIANT] - SOFA SET
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Produk Interior > Sofa Set
   // ============================================================
-  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set [VARIANT]",
+  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set",
 
   // ============================================================
   // [VARIANT] - KAMAR SET
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Produk Interior > Kamar Set
   // ============================================================
-  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set [VARIANT]",
+  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set",
 
   // ============================================================
   // [VARIANT] - KITCHEN SET PABRIKAN
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan
   // ============================================================
-  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan [VARIANT]"
+  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan"
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
