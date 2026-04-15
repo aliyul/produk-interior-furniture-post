@@ -1,11 +1,40 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingProdukInteriorFurniture = {
-   "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture",
-  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set",
-  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set",
-  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan"
+// ============================================================
+// PRODUK INTERIOR FURNITURE - VARIANT
+// ============================================================
+// 🧠 SEO NOTE: Setiap item adalah sub dari Produk Interior (/p/produk-interior.html)
+// Parent: Produk Interior (/p/produk-interior.html)
+// ============================================================
 
+const urlMappingProdukInteriorFurniture = {
+  // ============================================================
+  // [VARIANT] - TOKO FURNITURE
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Produk Interior > Toko Furniture
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture [VARIANT]",
+
+  // ============================================================
+  // [VARIANT] - SOFA SET
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Produk Interior > Sofa Set
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set [VARIANT]",
+
+  // ============================================================
+  // [VARIANT] - KAMAR SET
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Produk Interior > Kamar Set
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set [VARIANT]",
+
+  // ============================================================
+  // [VARIANT] - KITCHEN SET PABRIKAN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan [VARIANT]"
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
