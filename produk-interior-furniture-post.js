@@ -30,7 +30,7 @@ const urlMappingProdKitchenPabrikanPost = {
   // 🧠 STATUS: PERLU DICEK (konten tidak lengkap - hanya breadcrumb)
   // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan > Kitchen Set Modular Rumah
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah [MONEY PAGE - KONTEN TIPIS]",
+  "https://www.betonjayareadymix.com/2019/04/kitchen-set-modular-rumah.html": "Kitchen Set Modular Rumah",
 
   // ============================================================
   // [MONEY PAGE] - KITCHEN SET SIAP PAKAI
