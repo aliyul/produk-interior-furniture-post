@@ -320,63 +320,38 @@ document.addEventListener("DOMContentLoaded", function() {
   
      pageNameProdukInFur.textContent = "";
 if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
-        restoreCondition('ProdukInFur');
-        restoreCondition('ProdukInteriorFurniture');
-        //restoreCondition('ProdukKonstruksi');
- 
-     //hapus elemen div id lain
-        removeCondition1('MaterialKons');
-        removeCondition1('ProdukKons');
-        removeCondition1('ProdukKonsSaluran');
-        removeCondition1('ProdukKonsPembatas');
-        removeCondition1('JasaKonsPembatas');
-        removeCondition('JasaKonsJalanPerkerasan');
-        removeCondition('JasaKonsPondasiTanah');
-       	removeCondition1('JasaKons');
-       	removeCondition1('JasaKonsSub');
-       	removeCondition1('MenuKons');
-       	removeCondition1('JasaKonsFinishing');
-        removeCondition1('JasaKonsStruktur');
-        removeCondition1('JasaKonsPerbaikan');
+    restoreCondition('ProdukInFur');
+    restoreCondition('ProdukInteriorFurniture');
+    
+    // hapus elemen div id lain
+    removeCondition1('MaterialKons');
+    removeCondition1('ProdukKons');
+    removeCondition1('ProdukKonsSaluran');
+    removeCondition1('ProdukKonsPembatas');
+    removeCondition1('JasaKonsPembatas');
+    removeCondition('JasaKonsJalanPerkerasan');
+    removeCondition('JasaKonsPondasiTanah');
+    removeCondition1('JasaKons');
+    removeCondition1('JasaKonsSub');
+    removeCondition1('MenuKons');
+    removeCondition1('JasaKonsFinishing');
+    removeCondition1('JasaKonsStruktur');
+    removeCondition1('JasaKonsPerbaikan');
 
-     //hapus elemen ID DIV SUB ProdukInteriorFurniture SEMUA NYA
-        ProdukInteriorFurnitureLink.style.visibility = 'visible';
-         //KitchenSetLink.style.visibility = 'visible';
-        //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
-    }
- // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-               {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Produk Interior",
-                   "item": "https://www.betonjayareadymix.com/p/produk-interior.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": urlMappingProdukInteriorFurniture[cleanUrlProdukInFur],
-                   "item": cleanUrlProdukInFur
-               }
-           ]
-       };
-
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-   }
+    // tampilkan link
+    ProdukInteriorFurnitureLink.style.visibility = 'visible';
+    pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
+    
+    // ✅ CUKUP 1 BARIS INI — GANTI SEMUA JSON-LD MANUAL
+    generateBreadcrumbForMapping(
+        urlMappingProdukInteriorFurniture,
+        cleanUrlProdukInFur,
+        [
+            'Produk Interior'
+        ],
+        'PRODUK_INTERIOR'
+    );
+}
 
   
    });
