@@ -9,32 +9,36 @@
 
 const urlMappingProdukInteriorFurniture = {
   // ============================================================
-  // [VARIANT] - TOKO FURNITURE
+  // [SUB2] - TOKO FURNITURE (KATEGORI)
+  // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
   // 🧠 STATUS: AKTIF (konten lengkap)
-  // Breadcrumb: Home > Produk Interior > Toko Furniture
+  // Breadcrumb: Home > Produk Interior > Toko Furniture (3 level)
   // ============================================================
-  "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko furniture",
+  "https://www.betonjayareadymix.com/p/toko-furniture.html": "Toko Furniture",  // TYPE: SUB2
 
   // ============================================================
-  // [VARIANT] - SOFA SET
+  // [SUB2] - SOFA SET (KATEGORI)
+  // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
   // 🧠 STATUS: AKTIF (konten lengkap)
-  // Breadcrumb: Home > Produk Interior > Sofa Set
+  // Breadcrumb: Home > Produk Interior > Sofa Set (3 level)
   // ============================================================
-  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa set",
+  "https://www.betonjayareadymix.com/p/sofa-set.html": "Sofa Set",  // TYPE: SUB2
 
   // ============================================================
-  // [VARIANT] - KAMAR SET
+  // [SUB2] - KAMAR SET (KATEGORI)
+  // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
   // 🧠 STATUS: AKTIF (konten lengkap)
-  // Breadcrumb: Home > Produk Interior > Kamar Set
+  // Breadcrumb: Home > Produk Interior > Kamar Set (3 level)
   // ============================================================
-  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar set",
+  "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar Set",  // TYPE: SUB2
 
   // ============================================================
-  // [VARIANT] - KITCHEN SET PABRIKAN
-  // 🧠 STATUS: AKTIF (konten lengkap)
-  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan
+  // [MONEY_MASTER] - KITCHEN SET PABRIKAN
+  // 🧠 TYPE: MONEY_MASTER (WAJIB tampil, intent transaksional)
+  // 🧠 STATUS: AKTIF (konten lengkap - ada harga, spesifikasi, FAQ)
+  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan (3 level)
   // ============================================================
-  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen set pabrikan"
+  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_MASTER
 };
 
 // ============================================================
