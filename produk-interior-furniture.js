@@ -1,7 +1,7 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 // ============================================================
-// PRODUK INTERIOR FURNITURE - VARIANT
+// PRODUK INTERIOR FURNITURE - pillar
 // ============================================================
 // 🧠 SEO NOTE: Setiap item adalah sub dari Produk Interior (/p/produk-interior.html)
 // Parent: Produk Interior (/p/produk-interior.html)
@@ -31,14 +31,32 @@ const urlMappingProdukInteriorFurniture = {
   // Breadcrumb: Home > Produk Interior > Kamar Set (3 level)
   // ============================================================
   "https://www.betonjayareadymix.com/p/kamar-set.html": "Kamar Set",  // TYPE: SUB2
+  // ============================================================
+// [SUB-PILLAR TIPE 2] - JENIS KITCHEN SET
+// ============================================================
+"https://www.betonjayareadymix.com/p/jenis-kitchen-set.html": "Jenis Kitchen Set",  // TYPE: SUB2
 
-  // ============================================================
-  // [MONEY_MASTER] - KITCHEN SET PABRIKAN
-  // 🧠 TYPE: MONEY_MASTER (WAJIB tampil, intent transaksional)
-  // 🧠 STATUS: AKTIF (konten lengkap - ada harga, spesifikasi, FAQ)
-  // Breadcrumb: Home > Produk Interior > Kitchen Set Pabrikan (3 level)
-  // ============================================================
-  "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_MASTER
+// ============================================================
+// [MONEY_PAGE] - KITCHEN SET PABRIKAN
+// 🧠 TYPE: MONEY_PAGE (bukan MONEY_MASTER)
+// Breadcrumb: Home > Produk Interior > Jenis Kitchen Set > Kitchen Set Pabrikan (4 level)
+// ============================================================
+//"https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_PAGE
+
+/*
+Buat MONEY_MASTER terlebih dahulu (struktur ideal)
+javascript
+// ============================================================
+// [MONEY_MASTER] - HARGA KITCHEN SET
+// 🧠 TYPE: MONEY_MASTER (WAJIB ada sebelum MONEY_PAGE)
+// ============================================================
+"https://www.betonjayareadymix.com/p/harga-kitchen-set.html": "Harga Kitchen Set",  // TYPE: MONEY_MASTER
+
+// ============================================================
+// [MONEY_PAGE] - KITCHEN SET PABRIKAN (turunan dari MONEY_MASTER)
+// ============================================================
+"https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_PAGE
+*/
 };
 
 // ============================================================
