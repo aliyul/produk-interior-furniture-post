@@ -1715,6 +1715,18 @@ document.addEventListener("DOMContentLoaded", function() {
      //KitchenSetLink.style.visibility = 'hidden';
   
      pageNameProdukInFur.textContent = "";
+if (urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur]) {
+    generateBreadcrumbProdukInterior(
+        urlMappingProdukInteriorFromPillarSub2,
+        cleanUrlProdukInFur,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' }
+           //	{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' }
+        ],
+        'PRODUK_INTERIOR'
+    );
+}
 if (urlMappingProdukInteriorFromSub2Sub1[cleanUrlProdukInFur]) {
     generateBreadcrumbProdukInterior(
         urlMappingProdukInteriorFromSub2Sub1,
@@ -1727,7 +1739,19 @@ if (urlMappingProdukInteriorFromSub2Sub1[cleanUrlProdukInFur]) {
         'PRODUK_INTERIOR'
     );
 }
-	
+if (urlMappingProdukInteriorFromSub1MoneyMaster[cleanUrlProdukInFur]) {
+    generateBreadcrumbProdukInterior(
+        urlMappingProdukInteriorFromSub1MoneyMaster,
+        cleanUrlProdukInFur,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' },
+           	{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' },
+		   	{ name: 'Perbandingan Produk Interior', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-interior.html' }
+        ],
+        'PRODUK_INTERIOR'
+    );
+}	
 
   
    });
