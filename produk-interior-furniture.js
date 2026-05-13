@@ -65,7 +65,7 @@ const urlMappingProdukInteriorFromSub1MoneyMaster = {
 // ============================================================
 //"https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_PAGE
 
-/*
+
 Buat MONEY_MASTER terlebih dahulu (struktur ideal)
 javascript
 // ============================================================
@@ -78,7 +78,6 @@ javascript
 // [MONEY_PAGE] - KITCHEN SET PABRIKAN (turunan dari MONEY_MASTER)
 // ============================================================
 "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_PAGE
-*/
 };
 */
 /**
