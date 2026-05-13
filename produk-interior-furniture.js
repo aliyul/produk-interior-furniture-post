@@ -1700,40 +1700,19 @@ document.addEventListener("DOMContentLoaded", function() {
      //KitchenSetLink.style.visibility = 'hidden';
   
      pageNameProdukInFur.textContent = "";
-if (urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur]) {
-    restoreCondition('ProdukInFur');
-    restoreCondition('ProdukInteriorFurniture');
-    
-    // hapus elemen div id lain
-    removeCondition1('MaterialKons');
-    removeCondition1('ProdukKons');
-    removeCondition1('ProdukKonsSaluran');
-    removeCondition1('ProdukKonsPembatas');
-    removeCondition1('JasaKonsPembatas');
-    removeCondition('JasaKonsJalanPerkerasan');
-    removeCondition('JasaKonsPondasiTanah');
-    removeCondition1('JasaKons');
-    removeCondition1('JasaKonsSub');
-    removeCondition1('MenuKons');
-    removeCondition1('JasaKonsFinishing');
-    removeCondition1('JasaKonsStruktur');
-    removeCondition1('JasaKonsPerbaikan');
-
-    // tampilkan link
-    ProdukInteriorFurnitureLink.style.visibility = 'visible';
-    pageNameProdukInFur.textContent = urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur];
-    
+if (urlMappingProdukInteriorFromSub2Sub1[cleanUrlProdukInFur]) {
     generateBreadcrumbProdukInterior(
-        urlMappingProdukInteriorFromPillarSub2,
+        urlMappingProdukInteriorFromSub2Sub1,
         cleanUrlProdukInFur,
        [
            // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
-        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' }
-           	//{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' }
+        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' },
+           	{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' }
         ],
         'PRODUK_INTERIOR'
     );
 }
+	
 
   
    });
