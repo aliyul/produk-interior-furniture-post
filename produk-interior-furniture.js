@@ -12,9 +12,7 @@ const urlMappingProdukInteriorFromPillarSub2 = {
 const urlMappingProdukInteriorFromSub2Sub1 = {
  "https://www.betonjayareadymix.com/p/perbandingan-produk-interior.html": "Perbandingan Produk Interior"  // TYPE: SUB2
 }
-const urlMappingProdukInteriorFromSub1MoneyMaster = {
 
-}
 const urlMappingProdukInteriorFromSub1MoneyMaster = {
   // ============================================================
   // [SUB2] - TOKO FURNITURE (KATEGORI)
@@ -1102,7 +1100,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlMappingGabungan = Object.assign(
       {},
 		urlMappingProdukInteriorFromPillarSub2,
-		urlMappingProdukInteriorFromSub2Sub1
+		urlMappingProdukInteriorFromSub2Sub1,
+		urlMappingProdukInteriorFromSub1MoneyMaster
 		//urlMappingJasaAlatKonstruksiBridgeFromSub2Sub1MoneyPage,
 
     );
