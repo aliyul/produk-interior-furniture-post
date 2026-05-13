@@ -1476,9 +1476,8 @@ document.addEventListener("DOMContentLoaded", function() {
           return "2026-04-01T10:30:00+07:00";
         }
         // sub-pillar-tipe-2, variant, sub-variant
-       		  // JASA KONSTRUKSI CUTTING BETON POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
-		
-        return "2026-04-16T00:00:00+07:00";
+    
+        return "2026-05-13T00:00:00+07:00";
       }
               /*
 		        // JASA ALAT KONSTRUKSI POST : Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
@@ -1516,9 +1515,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // Semi evergreen, update lebih sering dari pillar
       // ============================================================
       if (FLEXIBLE_LEVELS.includes(pageLevel)) {
-           		  // JASA KONSTRUKSI CUTTING BETON POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
-		
-        return "2026-04-16T00:00:00+07:00";
+    
+        return "2026-05-13T00:00:00+07:00";
       }
       
       // ============================================================
