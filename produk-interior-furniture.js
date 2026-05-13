@@ -12,8 +12,24 @@ const urlMappingProdukInteriorFromPillarSub2 = {
 const urlMappingProdukInteriorFromSub2Sub1 = {
  "https://www.betonjayareadymix.com/p/perbandingan-produk-interior.html": "Perbandingan Produk Interior"  // TYPE: SUB2
 }
-
 const urlMappingProdukInteriorFromSub1MoneyMaster = {
+  "https://www.betonjayareadymix.com/p/harga-nakas.html": "Harga Nakas",
+  "https://www.betonjayareadymix.com/p/harga-tempat-tidur.html": "Harga Tempat Tidur",
+  "https://www.betonjayareadymix.com/p/harga-bufet.html": "Harga Bufet",
+  "https://www.betonjayareadymix.com/p/harga-lemari-hias.html": "Harga Lemari Hias",
+  "https://www.betonjayareadymix.com/p/harga-partisi.html": "Harga Partisi",
+  "https://www.betonjayareadymix.com/p/harga-rak-dinding.html": "Harga Rak Dinding",
+  "https://www.betonjayareadymix.com/p/harga-springbed.html": "Harga Springbed",
+  "https://www.betonjayareadymix.com/p/harga-sofa.html": "Harga Sofa",
+  "https://www.betonjayareadymix.com/p/harga-kursi.html": "Harga Kursi",
+  "https://www.betonjayareadymix.com/p/harga-meja.html": "Harga Meja",
+  "https://www.betonjayareadymix.com/p/harga-meja-makan.html": "Harga Meja Makan",
+  "https://www.betonjayareadymix.com/p/harga-lemari.html": "Harga Lemari",
+  "https://www.betonjayareadymix.com/p/harga-kitchen-set.html": "Harga Kitchen Set"
+};
+/*
+const urlMappingProdukInteriorFromSub1MoneyMaster = {
+	
   // ============================================================
   // [SUB2] - TOKO FURNITURE (KATEGORI)
   // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
@@ -64,7 +80,7 @@ javascript
 "https://www.betonjayareadymix.com/p/kitchen-set-pabrikan.html": "Kitchen Set Pabrikan",  // TYPE: MONEY_PAGE
 */
 };
-
+*/
 /**
  * generateBreadcrumbForMapping v5.7 — COMPLETE PHASE SYSTEM WITH ENTITY PILLAR EXACT MATCH
  * ✅ FIX: ENTITY PILLAR hanya EXACT MATCH berdasarkan CLEAN URL
