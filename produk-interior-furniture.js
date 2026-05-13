@@ -1728,7 +1728,7 @@ if (urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur]) {
         cleanUrlProdukInFur,
        [
            // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
-        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' },
+        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' }
            	//{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' }
         ],
         'PRODUK_INTERIOR'
