@@ -12,7 +12,10 @@ const urlMappingProdukInteriorFromPillarSub2 = {
 const urlMappingProdukInteriorFromSub2Sub1 = {
  "https://www.betonjayareadymix.com/p/perbandingan-produk-interior.html": "Perbandingan Produk Interior"  // TYPE: SUB2
 }
-const urlMappingProdukInteriorFurniture = {
+const urlMappingProdukInteriorFromSub1MoneyMaster = {
+
+}
+const urlMappingProdukInteriorFromSub1MoneyMaster = {
   // ============================================================
   // [SUB2] - TOKO FURNITURE (KATEGORI)
   // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
@@ -93,7 +96,7 @@ javascript
  * @date 2026-01-15
  */
 
-function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], entityType = 'PRODUK_INTERIOR') {
+function generateBreadcrumbProdukInterior(mappingObj, currentUrl, breadcrumbItems = [], entityType = 'PRODUK_INTERIOR') {
     
     // ============================================================
     // 1. KONSTANTA & VALIDASI
@@ -1098,9 +1101,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		// --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
-		urlMappingJasaKonsFromPillarSub2,
-		urlMappingJasaAlatKonstruksiBridgeFromSub2Sub1,
-		urlMappingJasaAlatKonstruksiBridgeFromSub2Sub1MoneyPage,
+		urlMappingProdukInteriorFromPillarSub2,
+		urlMappingProdukInteriorFromSub2Sub1
+		//urlMappingJasaAlatKonstruksiBridgeFromSub2Sub1MoneyPage,
 
     );
 
@@ -1164,6 +1167,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 	  
     // --- validasi URL terdaftar ---
+	
     if (!urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
       console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukInFur}`);
       return;
@@ -1696,7 +1700,7 @@ document.addEventListener("DOMContentLoaded", function() {
      //KitchenSetLink.style.visibility = 'hidden';
   
      pageNameProdukInFur.textContent = "";
-if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
+if (urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur]) {
     restoreCondition('ProdukInFur');
     restoreCondition('ProdukInteriorFurniture');
     
@@ -1717,14 +1721,15 @@ if (urlMappingProdukInteriorFurniture[cleanUrlProdukInFur]) {
 
     // tampilkan link
     ProdukInteriorFurnitureLink.style.visibility = 'visible';
-    pageNameProdukInFur.textContent = urlMappingProdukInteriorFurniture[cleanUrlProdukInFur];
+    pageNameProdukInFur.textContent = urlMappingProdukInteriorFromPillarSub2[cleanUrlProdukInFur];
     
-    // ✅ CUKUP 1 BARIS INI — GANTI SEMUA JSON-LD MANUAL
-    generateBreadcrumbForMapping(
-        urlMappingProdukInteriorFurniture,
+    generateBreadcrumbProdukInterior(
+        urlMappingProdukInteriorFromPillarSub2,
         cleanUrlProdukInFur,
-        [
-            'Produk Interior'
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+        	{ name: 'Produk Interior', url: 'https://www.betonjayareadymix.com/p/produk-interior.html' },
+           	//{ name: 'Daftar Produk Interior', url: 'https://www.betonjayareadymix.com/p/daftar-produk-interior.html' }
         ],
         'PRODUK_INTERIOR'
     );
